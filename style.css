@@ -212,3 +212,69 @@ ul {
   font-size: 0.8em;
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  /* Header photo — shrink the fixed 400x400 square */
+  #header-photo-container {
+    width: 85vw;
+    height: 85vw;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .overlay-text h2 {
+    letter-spacing: 4px;
+    font-size: 0.9em;
+  }
+
+  .overlay-text p {
+    letter-spacing: 1px;
+    font-size: 0.7em;
+  }
+
+  /* Section titles — wide letter-spacing wraps ugly on small screens */
+  .section h2 {
+    letter-spacing: 5px;
+    font-size: 14px;
+  }
+
+  /* Widen the cards so they don't feel cramped */
+  .section-main {
+    width: 90%;
+    padding: 35px 8%;
+  }
+
+  .section-secondary {
+    width: 90%;
+    padding: 20px 8%;
+  }
+
+  .section-button {
+    width: 60%;
+    letter-spacing: 3px;
+    padding: 18px;
+    padding-top: 2.5em;
+  }
+
+  /* Tighten the vertical rhythm so you don't have to scroll forever */
+  .section {
+    margin: 3em auto 6em auto;
+  }
+
+  .foldable-secondary:hover {
+    margin: 3em auto 3em auto;
+  }
+
+  /* Social / number icons — 3em is huge on a phone */
+  .inline-icons li > a {
+    font-size: 2em;
+  }
+
+  .number-icons span {
+    font-size: 2em;
+  }
+
+  .number-icons p {
+    font-size: 0.7em;
+  }
+}
