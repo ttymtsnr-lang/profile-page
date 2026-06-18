@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400|Raleway:200,400|Lato:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(28, 41, 62, 1);
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(153, 192, 245, 0.85),rgba(40, 89, 158, 0.85),rgba(19, 25, 33, 0.85)), url('images/IMG_7623.jpg') center / cover no-repeat fixed;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  min-height: 100vh;
+  padding-bottom: 5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER PHOTO */
+
+#header-photo-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background:
+    linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0)),
+    url('images/me.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #556171;
+  border-radius: 10px;
+  margin: 4em auto 0 auto;
+  box-shadow: 0px 80px 70px -60px black;
+  z-index: 1000;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 85%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.overlay-text h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 1em;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.overlay-text p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  color: lightgrey;
+  font-weight: 200;
+}
+
+#header-description {
+  margin-top: -2.5em;
+  z-index: 100;
+  position: relative;
+  max-width: 700px;
+  padding-top: 80px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 0.8em 2;
+}
+
+.quote-author {
+  text-align: right;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+/* SOCIAL ICONS */
+
+.inline-icons li {
+  display: inline-block;
+  width: 30%;
+}
+
+.inline-icons li > a {
+  color: rgba(28, 41, 62, 1);
+  font-size: 3em;
+  transition: 0.3s;
+}
+
+.inline-icons li > a:hover {
+  color: darkgrey;
+}
+
+/* SECTIONS */
+
+.section {
+  margin: 5em auto 10em auto;
+  max-width: 800px;
+  transition: 0.3s;
+}
+
+.section h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.section-main {
+  background-color: #EAEBED;
+  padding: 50px 15%;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 10px 61px 50px -53px rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  position: relative;
+}
+
+.section-secondary {
+  background-color: #B5B6B7;
+  padding: 20px 40px 25px 40px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 10px 30px 50px -25px rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 10;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.foldable-secondary .section-secondary {
+  margin: -5em auto 0 auto;
+  color: rgba(28, 41, 62, 0);
+}
+
+.foldable-secondary:hover .section-secondary {
+  background-color: #EAEBED;
+  margin: 0 auto;
+  color: rgba(28, 41, 62, 1);
+}
+
+.foldable-secondary:hover {
+  margin: 5em auto 5em auto;
+}
+
+/* BUTTON */
+
+.section-button {
+  background-color: #ffa33b;
+  background-image: linear-gradient(120deg, #ffa33b 0%, #FF2525 74%);
+  font-weight: 400;
+  padding: 20px;
+  width: 20%;
+  margin: -1.5em auto 0 auto;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px 50px 50px -40px #FF2525, 0px 30px 100px 0px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  transition: 0.3s;
+  padding-top: 3em;
+  overflow: hidden;
+}
+
+.section-button:hover {
+  opacity: 1;
+  margin: 0 auto -1.5em auto;
+  box-shadow: 0px 30px 50px -30px #FF2525, 0px 30px 100px 0px rgba(0, 0, 0, 0.5);
+}
+
+.section-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* NUMBER STATS */
+
+.number-icons li {
+  width: 30%;
+  margin: 0;
+}
+
+.number-icons span {
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.number-icons p {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
